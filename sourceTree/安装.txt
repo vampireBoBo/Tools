@@ -1,0 +1,12 @@
+https://blog.csdn.net/qq_24445853/article/details/93855377
+
+* 在安装的过程  跳过账户的创建，操作方式：
+	 * 1.打开 C:\Users\Administrator\AppData\Local\Atlassian目录，创建并修改accounts.json文件。
+	 * 2.进入accounts文件的上一级目录，C:\Users\Administrator\AppData\Local\Atlassian\SourceTree.exe_Url_nhyjtvwpwvx05ekrps1xkfsnyqgi52cr
+	 * 修改文件打开user.config文件，在里面加入六行代码：
+	 * <setting name="AgreedToEULA" serializeAs="String">
+		    <value>True</value>
+	   </setting>
+	   <setting name="AgreedToEULAVersion" serializeAs="String">
+		    <value>20160201</value>
+	   </setting>
