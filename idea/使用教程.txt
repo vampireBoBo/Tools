@@ -1,0 +1,11 @@
+1、热部署
+	1)全局属性->compiler -->勾选：build project automatically
+	2)tomcat的设置中-->设置server中的vm options下面的更新 选择：update classes and resource
+
+2、project为一个全新的工作空间
+	需要重新设置maven和jdk
+	在这个project下面的module则会默认使用project下面的maven路径和jdk的配置信息
+
+3、
+
+ 
