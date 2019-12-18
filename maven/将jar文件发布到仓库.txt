@@ -1,0 +1,23 @@
+====cmd指令打包=====================
+	1、在jar文件所在位置，进入控制台
+	2、执行指令：
+		mvn install:install-file -Dfile=test.jar -DgroupId=lhb -DartifactId=demo01 -Dversion=1.0.0 -Dpackaging=jar
+		-Dfile:需要打包的jar文件
+		-DgroupId：maven仓库坐标groupID
+		-DartifactId：maven仓库坐标artifactID
+		-Dversion：maven仓库坐标 version
+		-Dpackaging:打入maven仓库的格式为jar还是war
+		
+====pom.xml文件打包=====================
+	1.在jar文件所在同级目录下创建pom.xml文件
+	2.pom文件需要包含
+		<?xml version="1.0" encoding="UTF-8"?>
+		<!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by chenke (mingxin) --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+			<modelVersion>4.0.0</modelVersion>
+			<groupId>lhb</groupId>
+			<artifactId>demo01</artifactId>
+			<version>1.0.0</version>
+			<packaging>jar</packaging>
+		<?xml>
+
+	3.在当前路径进入cmd中，输入maven打包指令：mvn clean install  
